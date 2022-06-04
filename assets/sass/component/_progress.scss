@@ -1,0 +1,142 @@
+// progress-review-content
+.progress-review-content {
+  &.progress-review-content2 {
+    .rating-title {
+      width: 50%;
+    }
+  }
+  li {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    line-height: 2;
+    justify-content: center;
+  }
+  span {
+    display: block;
+  }
+  .rating-title {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    color: #bac4ce;
+    font-size: 14px;
+    @include tablet {
+      width: 60%;
+    }
+    @include large-mobile {
+      width: 70%;
+    }
+    .color-one {
+      display: block;
+      width: 10px;
+      height: 10px;
+      margin-right: 10px;
+      border-radius: 2px;
+      background-color: $primary-color;
+    }
+    .color-two {
+      background-color: #3490dc;
+    }
+    .color-three {
+      background-color: #2779bd;
+    }
+    .color-four {
+      background-color: #1c3d5a;
+    }
+    .color-five {
+      background-color: #12283a;
+    }
+  }
+  .rating-number {
+    font-size: 14px;
+  }
+  .tooltip-container {
+    display: block;
+    width: 70px;
+    border-radius: 5px;
+    height: 5px;
+    background: $primary-color;
+    cursor: pointer;
+  }
+}
+
+// from plugins
+.progress-bar1 {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  background: transparent;
+}
+.progress-bar1 .background {
+  background: $secondary-color;
+}
+
+.progress-bar1 div {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.progress-bar1 div span {
+  position: absolute;
+  font-family: Arial;
+  font-size: 25px;
+  line-height: 85px;
+  height: 85px;
+  width: 86px;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  font-size: 0;
+}
+.progress-bar1 .ratings-count {
+  position: absolute;
+  font-family: $heading-font;
+  font-size: 25px;
+  line-height: 85px;
+  height: 85px;
+  width: 86px;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  font-weight: 600;
+}
+
+.progress-bar1 .background {
+  background-color: #b3cef6;
+}
+
+.progress-bar1 .rotate {
+  clip: rect(0 50px 100px 0);
+  background-color: $primary-color;
+}
+
+.progress-bar1 .left {
+  clip: rect(0 50px 100px 0);
+  opacity: 1;
+  background-color: $primary-color;
+}
+
+.progress-bar1 .right {
+  clip: rect(0 50px 100px 0);
+  transform: rotate(180deg);
+  opacity: 0;
+  background-color: $primary-color;
+}
+
+@keyframes toggle {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,28 @@
+/* Navbar */
+.mp_menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &::-webkit-scrollbar {
+    height: 3px;
+  }
+  overflow-x: scroll;
+  .mp_list {
+    @include large-mobile {
+      margin: 0 20px;
+    }
+  }
+  .mp-list {
+    margin: 0 20px;
+  }
+  .mp-link {
+    color: $secondary-color;
+    text-transform: capitalize;
+    transition: 0.3s;
+    font-weight: 900;
+    font-size: 14px;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}

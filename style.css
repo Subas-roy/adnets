@@ -1,0 +1,59 @@
+/*!
+Theme Name: adnets
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: adnets
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+adnets is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+.wpcf7 input[type="text"] {
+    width: 100%;
+}
+
+.review-rating > span {
+	color: #ff780a !important;
+	font-size: 12px !important;
+	width: 15px !important;
+	height: 10px !important;
+}
+
+  /* forfooter subs-forn only  */
+.mp-footer-section p {
+    position: relative !important; }
+
+
+.foo-subs-wrapper .subs-btn {
+    position: absolute !important;
+    right: -50px !important;
+    top: 0 !important; }
+
+.foo-subs-wrapper {
+    position: relative !important;
+}
+.wpcf7 form.sent .wpcf7-response-output {
+    border-color: transparent !important;
+    position: absolute !important;
+    left: 0px !important;
+    top: 56px !important;
+    color: green !important;
+}
+/* forfooter subs-forn only ^ */
+
+
+

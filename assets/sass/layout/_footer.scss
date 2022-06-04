@@ -1,0 +1,76 @@
+/* Footer Section */
+
+// footer-banner
+.footer-banner {
+  margin-top: 60px;
+  margin-bottom: -70px;
+}
+
+.mp-footer-section {
+  padding-top: 130px;
+  padding-bottom: 70px;
+  background-color: $secondary-color;
+  @include large-mobile {
+    padding-top: 100px;
+  }
+  .footer-title {
+    color: $white-color;
+  }
+  .footer-menu {
+    .link {
+      font-size: 14px;
+      font-weight: 300;
+      color: $white-color;
+      text-transform: capitalize;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+  .copyright-text {
+    font-size: 14px;
+    font-weight: 300;
+    color: $white-color;
+  }
+  .label {
+    font-size: 14px;
+    color: $white-color;
+    text-transform: capitalize;
+    display: block;
+    font-weight: 300;
+  }
+}
+
+.contact-share-icons {
+  .icon {
+    font-size: 30px;
+    color: $white-color;
+    margin-right: 20px;
+    transition: 0.3s;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+.foo-subs-wrapper {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  .input {
+    padding: 10px 40px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+    @include desktop {
+      padding: 10px 3px;
+    }
+  }
+  .subs-btn {
+    border: 1px solid $primary-color;
+    padding: 9px 17px;
+    background: $primary-color;
+    color: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}

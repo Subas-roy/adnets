@@ -1,0 +1,45 @@
+// Template Font Name
+// $body-font: "Roboto", sans-serif;
+$body-font: "alibaba-sans", sans-serif;
+$heading-font: "alibaba-sans", sans-serif;
+
+// Template Color Name
+$primary-color: #45b9f2;
+$secondary-color: #022962;
+$heading-color: #1a264e;
+$paragraph-color: #1a264e;
+$oranage-color: #ff780a;
+
+$primary-lite-color: #edf9ff;
+
+// defaut-color
+$white-color: #ffffff;
+$black-color: #000000;
+$gray-bg: #f8f8f8;
+$deep-gray: #efebff;
+$brown-bg: #fdc689;
+
+// border-color
+$border-color: #eaeaea;
+
+// bg color
+$lite-sky: #edf4ff;
+
+// Social Media Color
+$facebook: #3b5999;
+$twitter: #55acee;
+$dribbble: #ea4c89;
+$behance: #131418;
+$google-plus: #dd4b39;
+$linkedin: #0077b5;
+$instagram: #e4405f;
+$youtube: #ff0000;
+
+// Google Font
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+// alibaba font
+@import url("https://use.typekit.net/xfg0wsd.css");
+
+// Transition
+$transition: all 0.3s ease-in;

@@ -1,0 +1,482 @@
+/* Homepage 1*/
+.ratings-card {
+  padding: 30px 20px;
+  text-align: center;
+  .m-img {
+    width: 160px;
+  }
+}
+a {
+  .title {
+    color: $secondary-color;
+    transition: 0.3s;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+// hero-slider-wrapper
+.hero-slider-wrapper {
+  .slider-img {
+    height: 410px;
+    @include tablet {
+      height: auto;
+    }
+  }
+}
+
+// premium-networks
+.premium-networks {
+  padding: 50px 0;
+}
+.section-title {
+  position: relative;
+  @include large-mobile {
+    margin-bottom: 30px;
+    text-align: left;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    background-color: $primary-color;
+    height: 2px;
+    width: 44px;
+    display: block;
+  }
+}
+
+// filter-menu
+.filter-menu {
+  background: $primary-lite-color;
+  padding: 10px 40px;
+  @include screen-1200 {
+    padding: 10px 20px;
+  }
+}
+.filter-title {
+  font-family: $heading-font;
+  font-weight: 700;
+  margin-bottom: 10px;
+  @include screen-1200 {
+    width: 100%;
+  }
+}
+
+.mp_select {
+  max-width: 220px;
+  height: 34px;
+  margin-right: 50px;
+  @include screen-1200 {
+    margin-right: 8px;
+  }
+  @include large-mobile {
+    margin-top: 15px;
+    width: 100%;
+    max-width: initial;
+  }
+  .list {
+    background-color: $secondary-color;
+    border: 1px solid $primary-color;
+    color: $primary-color;
+    @include large-mobile {
+      width: 100%;
+    }
+  }
+  .current {
+    line-height: 2;
+    color: $primary-color;
+    font-size: 16px;
+    font-weight: 900;
+  }
+
+  &::after {
+    border-bottom: 2px solid $primary-color;
+    border-right: 2px solid $primary-color;
+  }
+}
+.mp_select.primary-bg {
+  &::after {
+    border-bottom: 2px solid $white-color;
+    border-right: 2px solid $white-color;
+  }
+  .current {
+    color: $white-color;
+  }
+}
+
+// single card
+.mp_single-card {
+  border: 1px dashed $primary-color;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+  position: relative;
+  @include large-mobile {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  @include larger-1440 {
+    padding-right: 120px;
+  }
+  // separator
+  .separator {
+    transform: rotateZ(87deg);
+    font-size: 17px;
+    margin-top: 3px;
+    color: #e4e4e5;
+    margin-right: -14px;
+    @include large-mobile {
+      display: none;
+    }
+  }
+  // top
+  .top-card-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    @include large-mobile {
+      justify-content: center;
+    }
+    .title {
+      @include large-mobile {
+        width: 100%;
+        margin-top: 20px;
+      }
+    }
+  }
+  // ratings
+  .ratings-wrapper {
+    a {
+      color: $oranage-color;
+      font-size: 10px;
+    }
+    @include large-mobile {
+      width: 100%;
+    }
+  }
+
+  // bottom
+  .bottom-card-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include large-mobile {
+      justify-content: space-evenly;
+    }
+    li {
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+    .separator {
+      margin-top: -3px;
+      font-size: 17px;
+    }
+  }
+
+  .card-icon {
+    color: $secondary-color;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  .ratings-number {
+    border: 1px solid $oranage-color;
+    color: $oranage-color;
+    display: inline-block;
+    padding: 0 5px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: capitalize;
+    @include large-mobile {
+      margin-right: 10px;
+    }
+  }
+  .card-btn {
+    padding: 5px 20px;
+    font-weight: 800;
+  }
+  .icon-wraper {
+    .separator {
+      display: inline-block;
+      padding: 0 20px;
+    }
+    @include large-mobile {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+
+  // hover
+  &:hover {
+    border-radius: 10px;
+    background-color: $white-color;
+    box-shadow: 0px 0px 10px 0px rgba(39, 53, 160, 0.1);
+    border: 1px dashed transparent;
+  }
+}
+
+// mp_single-card_2
+.mp_single-card_2 {
+  .tags {
+    font-weight: 300;
+    font-size: 14px;
+    color: $secondary-color;
+    transition: 0.3s;
+    text-transform: capitalize;
+    // margin-right: 10px;
+    // margin-bottom: 10px;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  .pricing-box {
+    @include screen-1200 {
+      margin-top: 20px;
+    }
+  }
+}
+
+// mp_single-card_3
+.mp_single-card_3 {
+  @include screen-1200 {
+    padding-bottom: 70px;
+  }
+  .info {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+  .card-btn {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    @include screen-1200 {
+      left: 50%;
+      top: initial;
+      bottom: 20px;
+      transform: translateX(-50%);
+      right: initial;
+    }
+  }
+}
+
+// blog_single
+.blog_single {
+  .blog-img {
+    width: 150px;
+  }
+  @include tablet {
+    flex-direction: column;
+  }
+  .bottom-card-info {
+    justify-content: flex-start;
+    align-items: center;
+    @include large-mobile {
+      text-align: center;
+      justify-content: center;
+    }
+    li {
+      margin-right: 30px;
+    }
+  }
+}
+
+// sidebar
+.sidebar-widget {
+  padding: 30px 20px;
+  border: 1px solid transparent;
+  position: relative;
+}
+// gradient-box
+.gradient-box {
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(to left top, #33e3a6, #6b43ec);
+  border-radius: 5px;
+  padding: 30px 15px 15px 15px;
+  text-align: center;
+  .float-icon {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    background: black;
+    display: block;
+    color: #fff;
+    outline: 5px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .subs-input {
+    border: 1px solid #e0e0e0;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+    text-transform: capitalize;
+  }
+  .sign-up {
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+  }
+  small {
+    text-transform: capitalize;
+    font-size: 12px;
+    text-align: center;
+    opacity: 0.7;
+  }
+}
+
+// featured-widget
+.featured-widget {
+  overflow: hidden;
+  .list-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: 0.7s;
+    flex-wrap: wrap;
+    li {
+      line-height: 1;
+    }
+    .img {
+      width: 40px;
+    }
+    .title {
+      color: $secondary-color;
+      font-weight: 600;
+      font-size: 12px;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+    .rating-amnt {
+      font-size: 12px;
+      color: $oranage-color;
+      border: 1px solid $oranage-color;
+      padding: 0 5px;
+      border-radius: 3px;
+      font-weight: 800;
+    }
+    .btn1 {
+      padding: 5px 20px;
+      @include screen-1200 {
+        margin-top: 10px;
+      }
+
+      @include tablet {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .fea-wrapper {
+    display: flex;
+    align-items: center;
+  }
+}
+
+// recent-review
+.recent-review {
+  .single-review {
+    display: flex;
+    align-items: flex-start;
+    // flex-wrap: wrap;
+    .user-img {
+      width: 40px;
+      margin-right: 20px;
+      @include screen-1200 {
+        margin-bottom: 10px;
+      }
+      @include tablet {
+        margin-bottom: 0;
+      }
+    }
+    .title {
+      font-size: 12px;
+    }
+    .title-tag {
+      font-size: 12px;
+      color: $primary-color;
+      font-weight: 300;
+      margin-left: 20px;
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+    .day {
+      font-size: 12px;
+      font-weight: 300;
+    }
+  }
+  .ratings-wrapper {
+    width: initial;
+  }
+
+  .extra-small {
+    text-align: left;
+  }
+}
+
+// toprate networks
+.top-rate-networks {
+  .sl {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 4px;
+    background-color: #c6cee1;
+    color: #fff;
+    font-weight: 800;
+    font-size: 14px;
+    text-align: center;
+    margin-right: 15px;
+    &.active {
+      background-color: #3490dc;
+    }
+  }
+  .list {
+    font-weight: 800;
+    text-transform: capitalize;
+    font-size: 14px;
+    color: $secondary-color;
+  }
+  a.list {
+    &:hover {
+      color: $primary-color;
+    }
+  }
+  .total {
+    font-weight: 500;
+    font-size: 15px;
+    color: #c6cee1;
+    margin-left: 20px;
+  }
+  .rating {
+    color: $oranage-color;
+    font-weight: 500;
+    align-self: flex-end;
+    margin-left: 30px;
+  }
+}
